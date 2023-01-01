@@ -8,10 +8,10 @@ import os
 
 
 FILE_PATHS = [
-    "../music_data/dev_tracks/" + name for name in os.listdir("../music_data/dev_tracks/")
+    "../audio_data/dev_tracks/" + name for name in os.listdir("../audio_data/dev_tracks/")
 ]
 
-OUT_DIR = "../music_data/dev_tracks_aug/"
+OUT_DIR = "../audio_data/dev_tracks_aug/"
 if not os.path.isdir(OUT_DIR):
     os.mkdir(OUT_DIR)
 
@@ -34,7 +34,7 @@ fallback = [HighpassFilter(cutoff_frequency_hz=300),
 pedal_rolls = [roll_pedal(pedal=pedal_dict[pedal]["pedal"],
                           param_dict=pedal_dict[pedal]["param_dict"],
                           pedal_prob=prob,
-                          random_seed=10)
+                          random_seed=None)
                for pedal, prob in pedal_config]
 
 print("Pedal Rolls:")
