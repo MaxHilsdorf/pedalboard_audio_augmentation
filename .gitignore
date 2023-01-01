@@ -1,0 +1,14 @@
+*.csv
+*.xlsx
+*.pdf
+*.mp3
+*.wav
+
+old_stuff/*
+pedal_params.json
+code/exploration.ipynb
+code/custom_effects.py
+code/__pycache__/*
+
+!music_data/dev_tracks/*
+!music_data/dev_tracks_aug/*
