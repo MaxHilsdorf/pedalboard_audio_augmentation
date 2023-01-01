@@ -10,5 +10,5 @@ code/exploration.ipynb
 code/custom_effects.py
 code/__pycache__/*
 
-!music_data/dev_tracks/*
-!music_data/dev_tracks_aug/*
+!audio_data/dev_tracks/*
+!audio_data/dev_tracks_aug/*
