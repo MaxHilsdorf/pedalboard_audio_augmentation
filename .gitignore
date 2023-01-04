@@ -1,13 +1,12 @@
 *.csv
 *.xlsx
 *.pdf
-*.mp3
 *.wav
+*.npy
 
 old_stuff/*
+audio_data/dev_tracks_aug/*
 pedal_params.json
 code/exploration.ipynb
 code/custom_effects.py
 code/__pycache__/*
-
-!audio_data/dev_tracks/*
