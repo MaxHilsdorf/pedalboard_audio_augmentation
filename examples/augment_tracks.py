@@ -1,10 +1,12 @@
-from pedalboard import Pedalboard, Plugin, Compressor, Chorus, Delay, Gain, Phaser, Reverb, PitchShift, HighpassFilter, LowpassFilter, Distortion
-import audio_augmentation
-from audio_augmentation import roll_pedal, pedal_dict, process_track
+from pedalboard import Compressor, PitchShift, HighpassFilter
+import sys
 import numpy as np
 import librosa
 import soundfile as sf
 import os
+
+sys.path.append("../code/")
+from audio_augmentation import roll_pedal, pedal_dict, process_track
 
 
 FILE_PATHS = [
@@ -46,13 +48,15 @@ for pedal in pedal_rolls:
 
 for fp in FILE_PATHS:
     
+    # Extract info from file path
     track_dir = "/".join(fp.split("/")[:-1]) + "/"
     track_name = fp.split("/")[-1]
-    
     track_prefix = ".".join(track_name.split(".")[:-1])
     track_suffix = track_name.split(".")[-1]
     
+    # Apply board to audio
     audio, sr = librosa.load(track_dir + track_name)
     audio_processed = process_track(audio, sample_rate=sr, pedals=pedal_rolls, fallback=fallback)
 
+    # Export audio
     sf.write(file=f"{OUT_DIR}{track_prefix}_processed.wav", data=audio_processed, samplerate=sr)
