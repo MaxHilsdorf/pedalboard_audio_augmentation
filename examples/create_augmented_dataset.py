@@ -92,3 +92,4 @@ for i, row in tqdm(df_train.iterrows(), total=len(df_train)):
 
 ## EXPORT ARRAYS ##
 np.save("../audio_data/gtzan_mini/spectrogram_dataset_aug.npy", specs)
+np.save("../audio_data/gtzan_mini/labels_dataset_aug.npy", np.array(labels))
