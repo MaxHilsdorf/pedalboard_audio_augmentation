@@ -11,3 +11,5 @@ pedal_params.json
 code/exploration.ipynb
 code/custom_effects.py
 code/__pycache__/*
+
+!audio_data/gtzan_mini/*.csv
