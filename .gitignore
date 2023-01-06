@@ -4,6 +4,7 @@
 *.wav
 *.npy
 
+examples/.ipynb_checkpoints/*
 old_stuff/*
 audio_data/dev_tracks_aug/*
 pedal_params.json
