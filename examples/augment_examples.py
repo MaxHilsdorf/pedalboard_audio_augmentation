@@ -1,10 +1,10 @@
 from pedalboard import Compressor, PitchShift, HighpassFilter
-import sys
 import numpy as np
 import librosa
 import soundfile as sf
 import os
 
+import sys
 sys.path.append("../code/")
 from audio_augmentation import roll_pedal, pedal_dict, process_track
 
