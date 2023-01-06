@@ -10,7 +10,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This library used Spotify's Pedalboard library to enable natural audio data augmentation according to best practices. It comes with
+This library uses Spotify's Pedalboard library to enable natural audio data augmentation according to best practices. It comes with
 * an audio augmentation module that implements random, natural effect chains for audio augmentation.
 * example scripts for applying these random, natural augmentations to individual files or as part of a feature extraction pipeline.
 * some example audio files from the GTZAN dataset which you can use to play around with audio augmentations.
