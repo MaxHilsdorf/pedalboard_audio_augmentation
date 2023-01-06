@@ -1,0 +1,7 @@
+numpy
+pandas
+librosa
+soundfile
+scikit-learn
+tqdm
+pedalboard
