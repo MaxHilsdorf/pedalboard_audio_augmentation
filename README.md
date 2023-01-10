@@ -54,11 +54,12 @@ Please make sure FFmpeg is installed on your system. If that is not the case, fo
    ```
 2. Navigate into the repository in your terminal
     ```sh
-    cd path/to/repository
+    cd pedalboard_audio_augmentation
     ```
 3. (optional) Setup a new conda environment
     ```sh
     conda create --name pedalboard_aug
+    conda activate pedalboard_aug
     ```
 4. Install the dependencies
    ```sh
